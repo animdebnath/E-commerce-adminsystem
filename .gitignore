@@ -1,0 +1,5 @@
+uploads/products/*
+uploads/banners/*
+!uploads/**/.gitkeep
+.DS_Store
+Thumbs.db

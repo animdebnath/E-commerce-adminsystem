@@ -1,0 +1,70 @@
+/* Modern, soft, beginner-friendly admin theme */
+:root{
+  --bg:#f5f7fb; --card:#fff; --primary:#5b8def; --primary-dark:#3f6fd6;
+  --text:#1f2a44; --muted:#6b7a90; --border:#e6ebf2; --success:#22c55e;
+  --danger:#ef4444; --warning:#f59e0b; --shadow:0 4px 14px rgba(20,30,60,.06);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text)}
+a{text-decoration:none;color:inherit}
+
+.app-shell{display:flex;min-height:100vh}
+.sidebar{width:240px;background:#fff;border-right:1px solid var(--border);padding:18px 0;position:sticky;top:0;height:100vh;transition:transform .25s}
+.sidebar .brand{padding:0 22px 18px;font-weight:700;font-size:1.25rem;color:var(--primary);border-bottom:1px solid var(--border)}
+.sidebar .brand i{margin-right:8px}
+.sidebar .menu{display:flex;flex-direction:column;padding:14px 10px;gap:4px}
+.sidebar .menu a{padding:10px 14px;border-radius:10px;color:var(--muted);font-weight:500;display:flex;align-items:center;gap:10px;transition:all .2s}
+.sidebar .menu a:hover{background:#eef3ff;color:var(--primary)}
+.sidebar .menu a.active{background:var(--primary);color:#fff}
+
+.main{flex:1;display:flex;flex-direction:column;min-width:0}
+.topbar{background:#fff;padding:14px 26px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:5}
+.topbar-title{font-weight:600;font-size:1.05rem}
+.topbar-right{margin-left:auto;display:flex;align-items:center}
+.content{padding:26px;max-width:100%}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow)}
+.stat-card{padding:20px;display:flex;align-items:center;gap:16px;transition:transform .2s}
+.stat-card:hover{transform:translateY(-2px)}
+.stat-icon{width:54px;height:54px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;color:#fff}
+.bg-blue{background:linear-gradient(135deg,#5b8def,#3f6fd6)}
+.bg-green{background:linear-gradient(135deg,#34d399,#10b981)}
+.bg-orange{background:linear-gradient(135deg,#fbbf24,#f59e0b)}
+.bg-pink{background:linear-gradient(135deg,#f472b6,#ec4899)}
+.bg-purple{background:linear-gradient(135deg,#a78bfa,#8b5cf6)}
+.bg-red{background:linear-gradient(135deg,#fb7185,#ef4444)}
+.stat-label{color:var(--muted);font-size:.85rem;margin:0}
+.stat-value{font-size:1.6rem;font-weight:700;margin:2px 0 0}
+
+.btn-primary{background:var(--primary);border-color:var(--primary)}
+.btn-primary:hover{background:var(--primary-dark);border-color:var(--primary-dark)}
+
+.form-section{background:#fff;padding:26px;border-radius:14px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.input-icon{position:relative}
+.input-icon i{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.input-icon .form-control{padding-left:40px}
+
+.table-card{background:#fff;border-radius:14px;box-shadow:var(--shadow);border:1px solid var(--border);padding:18px}
+table.dataTable{border-collapse:separate !important;border-spacing:0}
+.table thead th{background:#f8fafc;color:var(--muted);font-weight:600;border-bottom:1px solid var(--border)}
+.table tbody tr:hover{background:#fafcff}
+
+.badge-soft{padding:6px 10px;border-radius:8px;font-weight:500;font-size:.8rem}
+.badge-pending{background:#fff5e6;color:#a35b00}
+.badge-approved{background:#e6f9ee;color:#127c3f}
+.badge-rejected{background:#fde8e8;color:#a01818}
+.badge-active{background:#e6f9ee;color:#127c3f}
+.badge-inactive,.badge-suspended,.badge-removed{background:#fde8e8;color:#a01818}
+
+/* Login screen */
+.login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eef3ff,#fdf2f8)}
+.login-card{background:#fff;border-radius:18px;padding:36px;width:100%;max-width:420px;box-shadow:0 20px 50px rgba(40,60,120,.12)}
+.login-card h2{margin:0 0 6px;font-weight:700;color:var(--primary)}
+.login-card p{color:var(--muted);margin:0 0 22px}
+
+/* Responsive */
+@media(max-width:768px){
+  .sidebar{position:fixed;left:0;top:0;height:100vh;z-index:50;transform:translateX(-100%)}
+  .sidebar.open{transform:translateX(0)}
+  .content{padding:16px}
+}
