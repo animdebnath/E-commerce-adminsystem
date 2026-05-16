@@ -54,7 +54,7 @@ Architecture: strict **MVC** with `models/`, `views/`, `controllers/`, `config/`
 Seller approval flow uses `jQuery.ajax` → `controllers/SellersController::ajaxAction` returning JSON.
 SweetAlert2 confirms the action and shows the result without reloading.
 
-## 📁 Folder Structure
+## 📁 Project Folder Structure
 
 ```
 ecommerce_admin/
