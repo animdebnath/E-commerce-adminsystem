@@ -297,21 +297,9 @@
       <p class="lp-title">Your Shop<br>Admin Panel</p>
       <p class="lp-sub">Manage orders, products, customers and analytics from one place.</p>
     </div>
-    <div class="stat-row">
-      <div class="stat-item">
-        <div class="stat-num">2,841</div>
-        <div class="stat-label">Orders this month</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">$48.2k</div>
-        <div class="stat-label">Revenue</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">1,203</div>
-        <div class="stat-label">Active customers</div>
-      </div>
-    </div>
   </div>
+  </div>
+
 
   <!-- Right Panel -->
   <div class="right-panel">
