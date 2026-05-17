@@ -285,8 +285,7 @@
 </style>
 </head>
 <body>
-
-<div class="split">
+  <div class="split">   
 
   <!-- Left Panel -->
   <div class="left-panel">
@@ -296,8 +295,7 @@
       </div>
       <p class="lp-title">Your Shop<br>Admin Panel</p>
       <p class="lp-sub">Manage orders, products, customers and analytics from one place.</p>
-    </div>
-  </div>
+      </div>
   </div>
 
 
